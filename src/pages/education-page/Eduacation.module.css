@@ -1,0 +1,172 @@
+.educationSection {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.educationContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 15rem;
+}
+
+.educationDetails {
+    margin-left: -4.5rem;
+    flex: 1 1 0;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(240, 165, 0);
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    margin-left: -20rem;
+    text-align: center;
+}
+
+.educationItem {
+    background-color: #4a3636;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5em;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.educationItem:hover {
+    background-color: rgb(160, 110, 0);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.iconContainer {
+    background-color: rgb(240, 165, 0);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.icon {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.details {
+    flex-grow: 1;
+}
+
+.years {
+    color: rgb(240, 165, 0);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.degree {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.institution {
+    font-size: 1.1rem;
+    color: #cccccc;
+}
+
+.illustration {
+    flex: 0 0 300px;
+    order: 1;
+    margin-bottom: 2rem;
+    align-self: center;
+    max-width: 300px;
+}
+
+.illustration img {
+    margin-left: -5rem;
+    width: 150%;
+    height: auto;
+    object-fit: contain;
+}
+
+.educationItemButton {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Ensures link text inherits color from parent */
+}
+
+@media (max-width: 1024px) {
+    .educationContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .illustration {
+        order: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    .educationItem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .iconContainer {
+        margin-bottom: 0.5rem;
+    }
+    .illustration {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title{
+        margin-left: 0px;
+    }
+    .educationDetails {
+        margin-left: -1rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .years {
+        font-size: 0.9rem;
+    }
+    .degree {
+        font-size: 1.2rem;
+    }
+    .institution {
+        font-size: 1rem;
+    }
+    .illustration {
+        margin-bottom: 1rem;
+        margin-top: -15rem;
+        margin-left: 4rem;
+        width: 70%;
+    }
+    .iconContainer {
+        margin-bottom: 0.5rem;
+        margin-right: 0;
+    }
+}
