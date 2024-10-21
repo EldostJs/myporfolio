@@ -34,7 +34,7 @@ html {
 
 .right {
     height: 70%;
-    background-color: #222;
+    background-color: #1a1a1a;
     position: relative;
     padding: 1rem;
     color: white;
@@ -247,7 +247,7 @@ html {
     .right {
         width: 70%;
         height: 100vh;
-        background-color: #222;
+        background-color: #1a1a1a;
         padding: 2rem;
         position: relative;
         color: white;
