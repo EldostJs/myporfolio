@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/myporfolio/static/css/main.cd969f1f.css",
-    "main.js": "/myporfolio/static/js/main.175a6e1e.js",
+    "main.css": "/myporfolio/static/css/main.6e210eff.css",
+    "main.js": "/myporfolio/static/js/main.ed1311f7.js",
     "static/js/453.f1a54c87.chunk.js": "/myporfolio/static/js/453.f1a54c87.chunk.js",
     "static/media/3BBS.gif": "/myporfolio/static/media/3BBS.b9583c91ce81b08ebd12.gif",
+    "static/media/expYellow.svg": "/myporfolio/static/media/expYellow.22be417c6d1c281c3b4b6ee0e80f0a5f.svg",
     "static/media/345591843___n.jpg": "/myporfolio/static/media/345591843_1450759638663497_3456097937288446370_n.92d6d0d6afab95cee670.jpg",
+    "static/media/elshad-agayevs-school-logo.png": "/myporfolio/static/media/elshad-agayevs-school-logo.a3dfffe4c938a42ad1ac.png",
     "static/media/social (1).png": "/myporfolio/static/media/social (1).985a7327fc7347ebdba0.png",
     "static/media/artificial-intelligence.png": "/myporfolio/static/media/artificial-intelligence.b441bea17e77d394db7e.png",
     "static/media/science.png": "/myporfolio/static/media/science.3bf6fb4b18b1f904676d.png",
@@ -25,12 +27,12 @@
     "static/media/eduYellow.svg": "/myporfolio/static/media/eduYellow.6b8f8b23f0d528180ffe9cba6245e1a1.svg",
     "static/media/vite-seeklogo.svg": "/myporfolio/static/media/vite-seeklogo.efdf7a553632e32cc9f83e18dca351a5.svg",
     "index.html": "/myporfolio/index.html",
-    "main.cd969f1f.css.map": "/myporfolio/static/css/main.cd969f1f.css.map",
-    "main.175a6e1e.js.map": "/myporfolio/static/js/main.175a6e1e.js.map",
+    "main.6e210eff.css.map": "/myporfolio/static/css/main.6e210eff.css.map",
+    "main.ed1311f7.js.map": "/myporfolio/static/js/main.ed1311f7.js.map",
     "453.f1a54c87.chunk.js.map": "/myporfolio/static/js/453.f1a54c87.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd969f1f.css",
-    "static/js/main.175a6e1e.js"
+    "static/css/main.6e210eff.css",
+    "static/js/main.ed1311f7.js"
   ]
 }
