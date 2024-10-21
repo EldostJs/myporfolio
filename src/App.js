@@ -1,5 +1,6 @@
 import About from "./pages/about-page/About";
 import Education from "./pages/education-page/Eduacation";
+import Experience from "./pages/experience-page/Experience";
 import Home from "./pages/home-page/Home";
 import Skills from "./pages/skills-page/Skills";
 
@@ -10,6 +11,7 @@ function App() {
     <About></About>
     <Education></Education>
     <Skills></Skills>
+    <Experience></Experience>
     </>
   );
 }
