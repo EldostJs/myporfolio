@@ -111,7 +111,7 @@ html, body {
   
     .leftSection {
       margin-bottom: 20px;
-      order: 2; /* Перемещает leftSection в конец */
+      order: 2; 
     }
   
     .image {
@@ -123,7 +123,7 @@ html, body {
   
     .rightSection {
       padding-left: 0;
-      order: 1; /* Устанавливает порядок для rightSection перед leftSection */
+      order: 1; 
     }
   
     .title {

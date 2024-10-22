@@ -1,0 +1,223 @@
+.projectsContainer {
+    padding: 2rem;
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.projectsTitle {
+    color: #f0a500;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projectCard {
+    background-color: #f0a500;
+    border-radius: 1rem;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cardContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projectCard:hover .cardContent {
+    transform: translateY(-40%);
+}
+
+.frontContent,
+.hoverContent {
+    position: absolute;
+    width: 100%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.frontContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0a500;
+}
+
+.hoverContent {
+    background-color: #1a1a1a;
+    top: 100%;
+    height: 70%;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    color: white;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.projectTitle {
+    color: white;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.projectDescription {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.technologiesList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.techTag {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.playButton,
+.codeButton {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.playButton:hover,
+.codeButton:hover {
+    background: white;
+    color: #ff6347;
+}
+
+.playIcon,
+.codeIcon {
+    font-size: 1.2rem;
+}
+
+.viewAllContainer {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+
+.viewAllButton {
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.viewAllButton:hover {
+    background-color: rgb(160, 110, 0);
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 1200px) {
+    .projectsGrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .projectsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .projectsTitle {
+        font-size: 2.5rem;
+    }
+
+    .projectCard {
+        height: 300px;
+    }
+
+    .imageContainer {
+        height: 140px;
+    }
+    .projectDescription{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .projectsGrid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .projectTitle {
+        font-size: 1.25rem;
+    }
+
+    .projectCard {
+        height: 280px;
+    }
+
+}
+
+/* Поддержка reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .cardContent {
+        transition: none;
+    }
+}
