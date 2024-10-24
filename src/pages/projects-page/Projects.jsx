@@ -12,7 +12,7 @@ const Projects = () => {
             description: 'The weather app provides accurate data on the current temperature and forecast for the coming days.',
             technologies: ['React', 'CSS', 'Weather API'],
             id: 1,
-            url: '',
+            url: 'https://lnkd.in/dpAhQtVH',
             codeUrl: 'https://github.com/EldostJs/Weather-forecast-react',
         },
         {

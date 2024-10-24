@@ -1,4 +1,5 @@
 import About from "./pages/about-page/About";
+import Contact from "./pages/contact-page/Contact";
 import Education from "./pages/education-page/Eduacation";
 import Experience from "./pages/experience-page/Experience";
 import Home from "./pages/home-page/Home";
@@ -14,6 +15,7 @@ function App() {
     <Skills></Skills>
     <Experience></Experience>
     <Projects></Projects>
+    <Contact></Contact>
     </>
   );
 }
