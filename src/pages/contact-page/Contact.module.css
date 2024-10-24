@@ -5,12 +5,22 @@
     padding: 2rem;
 }
 
+.contactText {
+    font-size: 1rem;
+    color: rgb(240, 165, 0);
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .title {
     color: rgb(240, 165, 0);
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    margin-bottom: 3rem;
     text-align: left;
-    padding-left: 2rem;
+    padding-left: 4rem;
 }
 
 .contentWrapper {
@@ -63,8 +73,8 @@
     border: 1.5px solid rgb(240, 165, 0);
 }
 
-.input:focus ~ .userLabel,
-.input:valid ~ .userLabel {
+.input:focus~.userLabel,
+.input:valid~.userLabel {
     transform: translateY(-50%) scale(0.8);
     background-color: #1a1a1a;
     padding: 0 .2em;
@@ -79,6 +89,7 @@
 .sendButton {
     background-color: rgb(240, 165, 0);
     color: white;
+    font-weight: 700;
     border: none;
     padding: 0.8rem 2rem;
     border-radius: 25px;
@@ -91,8 +102,10 @@
 }
 
 .sendButton:hover {
-    transform: translateY(-2px);
+    background-color: rgb(160, 110, 0);
 }
+
+
 
 .sendIcon {
     font-size: 0.8rem;
@@ -107,14 +120,16 @@
 }
 
 .contactInfo {
-    padding: 2rem 0;
+    padding-bottom: 2rem;
+    margin-top: -2rem;
+    padding-left: 3rem;
 }
 
 .infoItem {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .infoIcon {
@@ -123,8 +138,9 @@
 }
 
 .socialLinks {
+    padding-left: 3rem;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -154,7 +170,8 @@
 }
 
 .contactImage {
-    max-width: 100%;
+    margin-top: -5rem;
+    max-width: 85%;
     height: auto;
 }
 
@@ -208,11 +225,21 @@
 }
 
 @media (max-width: 480px) {
+    .contactText{
+        padding-top: 1rem;
+    }
+    .contactInfo{
+        margin-left: -3rem;
+    }
+    .socialLinks{
+        gap: 2rem;
+    }
     .title {
         font-size: 1.8rem;
     }
 
-    .input, .textarea {
+    .input,
+    .textarea {
         padding: 0.6rem;
     }
 
@@ -233,7 +260,9 @@
 
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
-    .input, .textarea {
+
+    .input,
+    .textarea {
         background-color: #2a2a2a;
     }
 }
