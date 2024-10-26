@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Linkedin, Github, Instagram, Facebook } from 'lucide-react';
+import { Linkedin, Github, Instagram, Facebook } from 'lucide-react';
 import HS from './Home.module.css';
 import ProfImg from './images/345591843_1450759638663497_3456097937288446370_n.jpg';
 
@@ -22,9 +22,6 @@ export default function Home() {
             <div className={HS.left}>
                 <div className={HS.logo}>
                     <h2>Eldost JS</h2>
-                    <Menu size={40} color="white" 
-                    className={HS.menu2}
-                    />
                 </div>
                 <div className={HS.socialIcons}>
                     <Linkedin size={30} onClick={handleWbsitelinkedln} />
@@ -39,9 +36,6 @@ export default function Home() {
                 </div>
             </div>
             <div className={HS.right}>
-                <div className={HS.menu}>
-                    <Menu size={40} color="white" className={HS.menu1}/>
-                </div>
                 <div className={HS.content}>
                     <h3>Front-End Developer</h3>
                     <h1>Eldost Mirzeyev</h1>

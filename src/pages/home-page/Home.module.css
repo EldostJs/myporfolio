@@ -1,5 +1,4 @@
 /* Base Styles (320px) */
-
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,6 @@ html {
     height: 100%;
 }
 
-
 .container {
     display: flex;
     flex-direction: column;
@@ -24,27 +22,16 @@ html {
 .left {
     height: 30%;
     background-color: #f0a500;
-    position: relative;
     padding: 1rem;
-}
-
-.menu2 {
-    display: none;
+    position: relative;
 }
 
 .right {
     height: 70%;
     background-color: #1a1a1a;
-    position: relative;
-    padding: 1rem;
     color: white;
-}
-
-.menu {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    left: auto;
+    padding: 1rem;
+    position: relative;
 }
 
 .logo {
@@ -58,21 +45,40 @@ html {
     margin: 0;
 }
 
+/* Социальные иконки */
 .socialIcons {
     cursor: pointer;
-    position: absolute;
-    bottom: 4rem;
-    left: 2rem;
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
+    flex-direction: column;
+    position: absolute;
+    left: 1rem;
+    bottom: 30px;
+}
+
+/* Изменение иконок для больших экранов */
+@media (min-width: 768px) {
+    .socialIcons {
+        flex-direction: row;
+        left: 1rem;
+        bottom: 1rem;
+    }
 }
 
 .profileImageContainer {
     position: absolute;
     top: 30%;
+    /* Поднято на 30% для мобильного экрана */
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+}
+
+/* Изменение позиции фотографии для мобильных */
+@media (max-width: 599px) {
+    .profileImageContainer {
+        top: 20%;
+    }
 }
 
 .profileImage {
@@ -91,13 +97,16 @@ html {
     object-fit: cover;
 }
 
+/* Центровка текста */
 .content {
     max-width: 90%;
-    margin-top: 1rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .content h3 {
@@ -120,33 +129,47 @@ html {
     line-height: 1.6;
 }
 
+/* Восстановленный дизайн кнопки Download CV */
 .buttonDiv {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.buttonDiv button {
+.downloadBtn {
     padding: 0.75rem 1.5rem;
-    border: none;
+    border: 3px solid #f0a500;
+    background-color: transparent;
+    color: #f0a500;
     border-radius: 25px;
     font-weight: bold;
     cursor: pointer;
     font-size: 15px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.downloadBtn {
-    background-color: transparent;
-    color: #f0a500;
-    border: 3px solid #f0a500 !important;
-}
-
-.contactBtn {
+.downloadBtn:hover {
     background-color: #f0a500;
     color: #222;
 }
 
+.contactBtn {
+    background-color: #f0a500;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0.75rem 1.5rem;
+    color: #222;
+}
 
+.contactBtn:hover {
+    background-color: black;
+    color: white;
+
+}
+
+/* Адаптивность */
 @media (max-width: 599px) {
     .left {
         height: 25%;
@@ -156,51 +179,38 @@ html {
         height: 75%;
     }
 
-    .content {
-        max-width: 90%;
-        margin: auto;
+    .socialIcons {
+        gap: 0.5rem;
+        /* Еще меньшее расстояние между иконками на мобильных */
+        bottom: 20px;
+        /* Опущено на 10px */
     }
 
-    .profileImage {
-        margin-top: -5rem;
-        width: 160px;
-        height: 160px;
+    /* Размер иконок социальных сетей для мобильных */
+    .socialIcons svg {
+        width: 20px;
+        height: 20px;
     }
 
     .content h1 {
         font-size: 2rem;
-        padding-top: 0.5rem;
     }
-    .content h3{
-        padding-top: 5rem;
+
+    .content h3 {
+        margin-top: 1rem;
     }
 
     .content p {
         font-size: 14px;
     }
-
-    .buttonDiv {
-        flex-direction: column;
-    }
 }
 
 @media (min-width: 600px) {
+
     .content {
-        padding-top: 6rem;
-        width: 50%;
-        margin-left: 13rem;
-    }
-
-    .buttonDiv {
-        margin-left: -1rem;
-    }
-
-    .content h1 {
-        font-size: 3rem;
-    }
-
-    .content p {
-        font-size: 18px;
+        padding-top: 5rem;
+        width: 60%;
+        margin: auto;
     }
 
     .profileImage {
@@ -209,28 +219,17 @@ html {
     }
 }
 
-@media (min-width: 950px) {
-    .buttonDiv {
-        margin-left: -1rem;
+@media (max-width:768px) {
+    .socialIcons {
+        gap: 0.5rem;
+        /* Еще меньшее расстояние между иконками на мобильных */
+        bottom: 20px;
+        /* Опущено на 10px */
     }
 
-    .content {
-        padding-top: 7rem;
-        width: 50%;
-        margin-left: 16rem;
-    }
-
-    .buttonDiv {
-        flex-direction: row;
-    }
-
-    .profileImage {
-        width: 250px;
-        height: 250px;
-    }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 950px) {
     .container {
         flex-direction: row;
         height: 100vh;
@@ -239,62 +238,31 @@ html {
     .left {
         width: 30%;
         height: 100vh;
-        background-color: #f0a500;
         padding: 2rem;
-        position: relative;
     }
 
     .right {
         width: 70%;
         height: 100vh;
-        background-color: #1a1a1a;
         padding: 2rem;
-        position: relative;
-        color: white;
-    }
-
-    .logo {
-        position: absolute;
-        top: 2rem;
-        left: 2rem;
-    }
-
-    .socialIcons {
-        position: absolute;
-        bottom: 2rem;
-        left: 2rem;
-        display: flex;
-        gap: 2rem;
-    }
-
-    .menu {
-        top: 2rem;
-        right: 2rem;
-        left: auto;
     }
 
     .profileImageContainer {
-        position: absolute;
         left: 30%;
         top: 50%;
         transform: translate(-50%, -50%);
     }
 
     .profileImage {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 
     .content {
         max-width: 50%;
-        margin-left: 15rem;
-        margin-top: 5rem;
+        margin: auto;
         align-items: flex-start;
         text-align: left;
-    }
-
-    .content h3 {
-        font-size: 24px;
     }
 
     .content h1 {
@@ -307,24 +275,5 @@ html {
 
     .buttonDiv {
         flex-direction: row;
-    }
-}
-
-@media (max-width: 1023px) {
-    .menu {
-        display: none;
-    }
-
-    .menu2 {
-        display: block;
-    }
-
-    .logo {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .socialIcons {
-        display: none;
     }
 }

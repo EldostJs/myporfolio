@@ -1,141 +1,155 @@
-/* Global styles */
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
-  }
-  
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  padding: 20px;
+  flex-direction: row;
+}
+
+.leftSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 500px; 
+  margin: 0 auto;
+  object-fit: contain;
+  margin-left: 10rem;
+}
+
+.rightSection {
+  flex: 2;
+  padding-left: 12rem;
+  padding-right: 8rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(240, 165, 0);
+  margin-bottom: 1.5rem;
+  text-align: right; 
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experienceItem {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #4a3636;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.experienceItem:hover {
+  background-color: rgb(160, 110, 0);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  text-align: left; 
+}
+
+.year {
+  font-size: 1rem;
+  font-weight: 900;
+  color: rgb(240, 165, 0);
+  margin-bottom: 0.5rem;
+}
+
+.role {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.company {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
   .container {
-    display: flex;
-    height: 100vh;
-    padding: 20px;
-  }
-  
-  /* Left section styles */
-  .leftSection {
-    flex: 1;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    height: auto;
   }
-  
-  .image {
-    width: 70vh;
-    margin-left: 3rem;
+  .leftSection, .rightSection {
+    width: 100%;
   }
-  
-  /* Right section styles */
-  .rightSection {
-    flex: 2;
-    padding-left: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
   .title {
-    font-size: 4rem;
-    font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;
-    color: rgb(240, 165, 0);
-    padding-left: 23rem;
+    font-size: 2.5rem;
+    text-align: center; 
   }
-  
-  .experienceList {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
   .experienceItem {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    align-items: center;
-    width: 70%;
-    margin-left: 10rem;
-    background-color: #4a3636;
-    padding: 2rem;
-    border-radius: 10px;
-    transition: background-color 0.3s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 1.5rem;
   }
-  
-  .experienceItem:hover {
-    background-color: rgb(160, 110, 0);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
   }
-  
-  .icon {
-    width: 2rem;
-    margin-right: 15px;
+  .experienceList {
+    gap: 1rem;
   }
-  
-  .details {
-    display: flex;
-    flex-direction: column;
+  .image {
+    max-width: 200px; 
+    margin-left: 4rem;
+    margin-top: 2rem;
   }
-  
-  .year {
-    font-size: 1rem;
-    font-weight: 900;
-    color: rgb(240, 165, 0);
-    margin-bottom: 5px;
+}
+
+@media (max-width: 480px) {
+  .leftSection {
+    order: 2;
   }
-  
+  .rightSection {
+    padding: 0;
+    order: 1;
+    text-align: center; 
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .experienceItem {
+    padding: 1rem;
+  }
   .role {
-    padding-top: 5px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .company {
-    padding-top: 5px;
     font-size: 1rem;
-    font-weight: 900;
-    color: #fff;
   }
-  
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      height: auto;
-    }
-  
-    .leftSection {
-      margin-bottom: 20px;
-      order: 2; 
-    }
-  
-    .image {
-      width: 100%;
-      max-width: 400px;
-      margin-left: -0.2rem;
-      padding-top: 1rem;
-    }
-  
-    .rightSection {
-      padding-left: 0;
-      order: 1; 
-    }
-  
-    .title {
-      font-size: 2.5rem;
-      text-align: center;
-      padding-left: 0;
-    }
-  
-    .experienceItem {
-      width: 100%;
-      margin-left: 0;
-      padding: 1.5rem;
-    }
-  }
-  
+}

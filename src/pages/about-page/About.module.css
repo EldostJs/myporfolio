@@ -1,6 +1,6 @@
 .about {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
@@ -28,6 +28,8 @@
     position: relative;
     display: inline-block;
     padding-bottom: 1rem;
+    opacity: 0;
+    animation: slideInUp 0.8s ease forwards;
 }
 
 .titleContainer::before {
@@ -47,6 +49,9 @@
     height: 5px;
     border-radius: 10px;
     background-color: rgb(240, 165, 0);
+    transform: scaleX(0);
+    animation: expandLine 0.8s ease forwards;
+    animation-delay: 0.3s;
 }
 
 .content {
@@ -60,6 +65,18 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     padding-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.who p:nth-child(2) {
+    animation: slideInUp 0.8s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.description {
+    animation: slideInUp 0.8s ease forwards;
+    animation-delay: 1s;
 }
 
 .illustration {
@@ -71,25 +88,57 @@
     margin-top: 5rem;
     margin-left: -20rem;
     width: 200%;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1.4s;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes expandLine {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 1200px) {
     .about {
         padding: 40px;
     }
-
+    
     .title {
         font-size: 3.5rem;
     }
-
+    
     .who p {
         font-size: 1.2rem;
     }
-
+    
     .illustration {
         flex: 0 0 200px;
     }
-
+    
     .illustration img {
         width: 150%;
         margin-left: -10rem;
@@ -100,19 +149,19 @@
     .about {
         padding: 30px;
     }
-
+    
     .title {
         font-size: 3rem;
     }
-
+    
     .who p {
         font-size: 1.1rem;
     }
-
+    
     .illustration {
         flex: 0 0 180px;
     }
-
+    
     .illustration img {
         width: 130%;
         margin-left: -5rem;
@@ -123,58 +172,81 @@
     .about {
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        padding: 20px 10px; 
     }
-
+    
     .title {
         font-size: 2rem;
-        text-align: center; 
-    }
-
-    .who p {
-        font-size: 0.9rem;
         text-align: center;
     }
-
+    
+    .who {
+        width: 90%; 
+        margin-left: 0; 
+        margin: 0 auto; 
+    }
+    
+    .who p {
+        font-size: 1rem; 
+        text-align: center;
+        padding: 0 10px; 
+    }
+    
+    .description {
+        max-width: 100%; 
+        margin: 0 auto;
+        padding: 0 10px; 
+    }
+    
     .illustration {
-        order: 2; 
+        order: 2;
         margin: 20px 0;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
+        width: 100%; 
     }
-
+    
     .content {
         padding-right: 0;
         text-align: center;
-        order: 1; 
+        order: 1;
+        width: 100%; 
     }
-
+    
     .longLine {
-        width: calc(50% - 0px);
-        left: 100px;
+        width: 60%;
+        left: 25%; 
     }
-
+    
     .illustration img {
-        margin-left: 15px;
-        width: 70%;
+        margin-left: 0;
+        width: 80%; 
         margin-top: -20px;
     }
 }
 
 @media (max-width: 480px) {
+    .about {
+        padding: 15px 5px; 
+    }
+    
+    .who {
+        width: 85%; 
+    }
+    
     .title {
-        font-size: 1.5rem;
+        font-size: 1.8rem; 
+        padding-bottom: 1rem;
     }
-
+    
     .who p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        padding: 0 5px; 
+        padding-bottom: 1rem;
     }
-
-    .illustration {
-        flex: 0 0 100px;
-    }
-
-    .illustration img {
-        width: 80%;
+    
+    .description {
+        font-size: 0.9rem;
+        padding: 0 5px;
     }
 }
