@@ -40,7 +40,7 @@ html, body {
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(240, 165, 0);
@@ -56,7 +56,7 @@ html, body {
 
 .experienceItem {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   display: flex;
   align-items: center;
   width: 100%;
@@ -85,21 +85,21 @@ html, body {
 }
 
 .year {
-  font-size: 1rem;
-  font-weight: 900;
   color: rgb(240, 165, 0);
+  font-size: 1rem;
   margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 .role {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
 .company {
-  font-size: 1rem;
-  font-weight: 900;
-  color: #fff;
+  font-size: 1.1rem;
+  color: #cccccc;
 }
 
 @media (max-width: 1024px) {

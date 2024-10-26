@@ -77,7 +77,7 @@ const Contact = () => {
     ];
 
     return (
-        <div className={styles.container}>
+        <div id="contact" className={styles.container}>
             <h1 className={styles.title}>{t('c1')}</h1>
 
             <div className={styles.contentWrapper}>

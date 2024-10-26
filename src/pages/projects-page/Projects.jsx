@@ -81,7 +81,9 @@ const Projects = () => {
                 ))}
             </div>
             <div className={styles.viewAllContainer}>
-                <button className={styles.viewAllButton}>{t('p8')}</button>
+                <button 
+                 onClick={() => window.open('https://github.com/EldostJs?tab=repositories', '_blank')}
+                className={styles.viewAllButton}>{t('p8')}</button>
             </div>
         </div>
     );
