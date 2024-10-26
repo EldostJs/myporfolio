@@ -5,8 +5,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import styles from './Contact.module.css';
 import { Mail, Phone, Linkedin, Github, Instagram, Facebook } from 'lucide-react';
 import im from './images/contactsYellow.svg';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+    const { t } = useTranslation(); // Перенесите сюда
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -25,25 +28,25 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         setIsSending(true); 
 
         emailjs.send(
             'service_gr8ksem', // Service ID
-            'template_wh5j59i', //Template ID
+            'template_wh5j59i', // Template ID
             formData,
-            'POEPMEYT4RKS8Wnfq' //Public Key
+            'POEPMEYT4RKS8Wnfq' // Public Key
         )
             .then((result) => {
                 console.log('Email успешно отправлен!', result.text);
-                toast.success('Message sent successfully!'); 
+                toast.success(t('c6')); 
                 setIsSending(false); 
             }, (error) => {
                 console.error('Ошибка при отправке email:', error.text);
-                toast.error('Error sending message.'); 
+                toast.error(t('c7')); 
                 setIsSending(false);
             });
 
+        // Сброс формы
         setFormData({
             name: '',
             email: '',
@@ -75,7 +78,7 @@ const Contact = () => {
 
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>Contacts</h1>
+            <h1 className={styles.title}>{t('c1')}</h1>
 
             <div className={styles.contentWrapper}>
                 <div className={styles.formWrapper}>
@@ -90,7 +93,7 @@ const Contact = () => {
                                 autoComplete="off"
                                 className={styles.input}
                             />
-                            <label className={styles.userLabel}>Name</label>
+                            <label className={styles.userLabel}>{t('c2')}</label>
                         </div>
 
                         <div className={styles.inputGroup}>
@@ -103,7 +106,7 @@ const Contact = () => {
                                 autoComplete="off"
                                 className={styles.input}
                             />
-                            <label className={styles.userLabel}>Email</label>
+                            <label className={styles.userLabel}>{t('c3')}</label>
                         </div>
 
                         <div className={styles.inputGroup}>
@@ -115,19 +118,18 @@ const Contact = () => {
                                 autoComplete="off"
                                 className={`${styles.input} ${styles.textarea}`}
                             />
-                            <label className={styles.userLabel}>Message</label>
+                            <label className={styles.userLabel}>{t('c4')}</label>
                         </div>
 
-                        <button type="submit" className={styles.sendButton} disabled={isSending}>
-                            {isSending ? 'Sending...' : 'Send'}
-                            <span className={styles.sendIcon}>➤</span>
+                        <button type="submit" className={styles.sendButton}>
+                            <span className={styles.isSending}>{t('c5')}</span>
                         </button>
                     </form>
                 </div>
 
                 <div className={styles.infoWrapper}>
                     <div className={styles.contactInfo}>
-                        <p className={styles.contactText}>You can also reach me via:</p>
+                        <p className={styles.contactText}>{t('c8')}</p>
                         <div className={styles.infoItem}>
                             <button onClick={mailClick} className={styles.socialButton} aria-label="Email">
                                 <Mail />

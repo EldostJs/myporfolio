@@ -1,4 +1,3 @@
-/* Base Styles (320px) */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +16,32 @@ html {
     flex-direction: column;
     height: 100vh;
     position: relative;
+}
+
+.languageButtons {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 1000;
+
+}
+
+.languageBtn {
+    background-color: transparent;
+    border: 3px solid #f0a500;
+    color: #f0a500;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.languageBtn:hover {
+    background-color: #f0a500;
+    color: #222;
 }
 
 .left {
@@ -45,7 +70,6 @@ html {
     margin: 0;
 }
 
-/* Социальные иконки */
 .socialIcons {
     cursor: pointer;
     display: flex;
@@ -56,7 +80,6 @@ html {
     bottom: 30px;
 }
 
-/* Изменение иконок для больших экранов */
 @media (min-width: 768px) {
     .socialIcons {
         flex-direction: row;
@@ -68,16 +91,33 @@ html {
 .profileImageContainer {
     position: absolute;
     top: 30%;
-    /* Поднято на 30% для мобильного экрана */
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
 }
 
-/* Изменение позиции фотографии для мобильных */
 @media (max-width: 599px) {
     .profileImageContainer {
         top: 20%;
+    }
+    .languageButtons{
+        flex-direction: column;
+        margin-right: -2rem;
+        padding-top: 1rem;
+        gap: 0.7rem;
+    }
+
+    .languageBtn {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+        border: 2px solid #1a1a1a;
+        color: #1a1a1a;
+    }
+
+    .languageBtn:hover {
+        background-color: #1a1a1a;
+        color: #f0a500;
+
     }
 }
 
@@ -97,7 +137,6 @@ html {
     object-fit: cover;
 }
 
-/* Центровка текста */
 .content {
     max-width: 90%;
     margin: 0 auto;
@@ -129,7 +168,6 @@ html {
     line-height: 1.6;
 }
 
-/* Восстановленный дизайн кнопки Download CV */
 .buttonDiv {
     display: flex;
     flex-direction: column;
@@ -166,10 +204,8 @@ html {
 .contactBtn:hover {
     background-color: black;
     color: white;
-
 }
 
-/* Адаптивность */
 @media (max-width: 599px) {
     .left {
         height: 25%;
@@ -181,12 +217,9 @@ html {
 
     .socialIcons {
         gap: 0.5rem;
-        /* Еще меньшее расстояние между иконками на мобильных */
         bottom: 20px;
-        /* Опущено на 10px */
     }
 
-    /* Размер иконок социальных сетей для мобильных */
     .socialIcons svg {
         width: 20px;
         height: 20px;
@@ -203,10 +236,14 @@ html {
     .content p {
         font-size: 14px;
     }
+
+    .languageBtn {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+    }
 }
 
 @media (min-width: 600px) {
-
     .content {
         padding-top: 5rem;
         width: 60%;
@@ -217,16 +254,6 @@ html {
         width: 220px;
         height: 220px;
     }
-}
-
-@media (max-width:768px) {
-    .socialIcons {
-        gap: 0.5rem;
-        /* Еще меньшее расстояние между иконками на мобильных */
-        bottom: 20px;
-        /* Опущено на 10px */
-    }
-
 }
 
 @media (min-width: 950px) {

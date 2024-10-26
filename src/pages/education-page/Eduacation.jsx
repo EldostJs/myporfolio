@@ -1,25 +1,28 @@
 import React from 'react';
 import ES from './Eduacation.module.css';
 import EI from './images/eduYellow.svg';
+import { useTranslation } from 'react-i18next';
 
 const Education = () => {
+    const { t } = useTranslation(); 
+
     const educationData = [
         {
             years: '2008-2016',
-            degree: 'Higher Secondary Education',
-            institution: 'Secondary School N67 (Russia, Samara)',
+            degree: t('e1'),
+            institution: t('e2'),
             link: 'http://school67samara.com/',
         },
         {
             years: '2016-2019',
-            degree: 'Higher Secondary Education',
-            institution: 'Secondary School N181 (Azerbaijan, Baku)',
+            degree: t('e3'),
+            institution: t('e4'),
             link: 'https://bakimektebleri.edu.az/181/',
         },
         {
             years: '2019-2023',
-            degree: 'Bachelor of Business and Management',
-            institution: 'Baku Business University',
+            degree: t('e5'),
+            institution: t('e6'),
             link: 'https://www.bbu.edu.az/',
         },
     ];
@@ -28,7 +31,7 @@ const Education = () => {
         <section className={ES.educationSection}>
             <div className={ES.educationContainer}>
                 <div className={ES.educationDetails}>
-                    <h2 className={ES.title}>Education</h2>
+                    <h2 className={ES.title}>{t('e7')}</h2>
                     {educationData.map((item, index) => (
                         <a
                             key={index}

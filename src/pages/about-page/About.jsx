@@ -1,7 +1,12 @@
+// About.js
+import React from 'react';
 import AS from './About.module.css';
-import GIF from './images/3BBS.gif'
+import GIF from './images/3BBS.gif';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section className={AS.about}>
       <div className={AS.content}>
@@ -9,12 +14,12 @@ const About = () => {
           <div className={AS.longLine}></div>
         </div>
         <div className={AS.who}>
-          <h2 className={AS.title}>Who I am</h2>
+          <h2 className={AS.title}>{t('a1')}</h2> 
           <p>
-            My name is Eldost. I'm a Front-End developer from Azerbaijan.
+            {t('a2')} 
           </p>
           <p className={AS.description}>
-            I am a highly motivated Front-End Developer with in-depth knowledge of JavaScript and React, specializing in the creation of interactive and responsive web applications using modern technologies such as HTML5, CSS3, and contemporary libraries. With experience in developing several personal projects, I have proven my ability to effectively solve challenges, optimize performance, and ensure user interface ease. Familiar with version control systems like Git, I quickly grasp new technologies and strive to enhance my skills within a dynamic team to create high-quality digital products.
+            {t('a3')} 
           </p>
         </div>
       </div>

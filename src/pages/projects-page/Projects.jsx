@@ -3,22 +3,26 @@ import styles from './Projects.module.css';
 import weather from './images/weather.png'
 import paper from './images/paper.png'
 import muvi from './images/muvi.png'
+import { useTranslation } from 'react-i18next';
+
 
 const Projects = () => {
+    const { t } = useTranslation(); 
+
     const projects = [
         {
-            title: 'Weather Forecast',
+            title: t('p1'),
             image: weather,
-            description: 'The weather app provides accurate data on the current temperature and forecast for the coming days.',
+            description: t('p2'),
             technologies: ['React', 'CSS', 'Weather API'],
             id: 1,
             url: 'https://lnkd.in/dpAhQtVH',
             codeUrl: 'https://github.com/EldostJs/Weather-forecast-react',
         },
         {
-            title: 'Search Movies',
+            title: t('p3'),
             image: muvi,
-            description: 'The movie search website provides easy access to film information, genres, and ratings, helping you discover new movies effortlessly.',
+            description: t('p4'),
             technologies: ['JavaScript', 'CSS', 'Movie API'],
             id: 2,
             url: 'https://eldostjs.github.io/movie/',
@@ -26,9 +30,9 @@ const Projects = () => {
 
         },
         {
-            title: 'Rock-Paper-Scissors',
+            title: t('p5'),
             image: paper,
-            description: 'The Rock, Paper, Scissors website lets users play the classic game against a robot, providing a fun way to test their skills.',
+            description: t('p6'),
             technologies: ['JavaScript', 'CSS'],
             id: 3,
             url: 'https://eldostjs.github.io/Rock-Paper-Scissorus/',
@@ -39,7 +43,7 @@ const Projects = () => {
 
     return (
         <div className={styles.projectsContainer}>
-            <h1 className={styles.projectsTitle}>Projects</h1>
+            <h1 className={styles.projectsTitle}>{t('p7')}</h1>
             <div className={styles.projectsGrid}>
                 {projects.map((project) => (
                     <div key={project.id} className={styles.projectCard}>
@@ -77,7 +81,7 @@ const Projects = () => {
                 ))}
             </div>
             <div className={styles.viewAllContainer}>
-                <button className={styles.viewAllButton}>View All</button>
+                <button className={styles.viewAllButton}>{t('p8')}</button>
             </div>
         </div>
     );

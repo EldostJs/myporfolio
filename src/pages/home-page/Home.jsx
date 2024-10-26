@@ -1,52 +1,59 @@
+// Home.js
 import React from 'react';
 import { Linkedin, Github, Instagram, Facebook } from 'lucide-react';
 import HS from './Home.module.css';
 import ProfImg from './images/345591843_1450759638663497_3456097937288446370_n.jpg';
+import { useTranslation } from 'react-i18next';
+import { useLanguage } from '../../translate/LanguageContext';
 
 export default function Home() {
-    const handleWbsitelinkedln = () => {
+    const { t } = useTranslation();
+    const { changeLanguage } = useLanguage();
+
+    const handleWebsiteLinkedIn = () => {
         window.open('https://www.linkedin.com/in/eldostmirzeyev/');
     };
-    const handleWbsiteGitHub = () => {
+    const handleWebsiteGitHub = () => {
         window.open('https://github.com/EldostJs');
     };
-    const handleWbsiteInstagram = () => {
+    const handleWebsiteInstagram = () => {
         window.open('https://www.instagram.com/_mirzeev_/?igsh=MThrcDJzdXp2Y2h4ZQ%3D%3D');
     };
-    const handleWbsiteFacebook = () => {
+    const handleWebsiteFacebook = () => {
         window.open('https://www.facebook.com/eldost.mirzoev?locale=ru_RU');
     };
 
     return (
         <div className={HS.container}>
+            <div className={HS.languageButtons}>
+                <button onClick={() => changeLanguage('ru')} className={HS.languageBtn}>Ru</button>
+                <button onClick={() => changeLanguage('en')} className={HS.languageBtn}>En</button>
+                <button onClick={() => changeLanguage('az')} className={HS.languageBtn}>Az</button>
+            </div>
             <div className={HS.left}>
                 <div className={HS.logo}>
-                    <h2>Eldost JS</h2>
+                    <h2>ELdost JS</h2>
                 </div>
                 <div className={HS.socialIcons}>
-                    <Linkedin size={30} onClick={handleWbsitelinkedln} />
-                    <Github size={30} onClick={handleWbsiteGitHub} />
-                    <Instagram size={30} onClick={handleWbsiteInstagram} />
-                    <Facebook size={30} onClick={handleWbsiteFacebook} />
+                    <Linkedin size={30} onClick={handleWebsiteLinkedIn} />
+                    <Github size={30} onClick={handleWebsiteGitHub} />
+                    <Instagram size={30} onClick={handleWebsiteInstagram} />
+                    <Facebook size={30} onClick={handleWebsiteFacebook} />
                 </div>
             </div>
             <div className={HS.profileImageContainer}>
                 <div className={HS.profileImage}>
-                    <img src={ProfImg} alt="" className={HS.image} />
+                    <img src={ProfImg} alt="Profile" className={HS.image} />
                 </div>
             </div>
             <div className={HS.right}>
                 <div className={HS.content}>
-                    <h3>Front-End Developer</h3>
-                    <h1>Eldost Mirzeyev</h1>
-                    <p>
-                        Front-end developer with experience in creating interactive and responsive web applications.
-                        Proficient in HTML5, CSS3, JavaScript (ES6+), and React. Skilled in Git, responsive design, and API integration.
-                        Focused on delivering high-quality UX/UI solutions and staying up to date with the latest web development trends.
-                    </p>
+                    <h3>{t('h1')}</h3>
+                    <h1>{t('h2')}</h1>
+                    <p>{t('h3')}</p>
                     <div className={HS.buttonDiv}>
-                        <button className={HS.downloadBtn}>Download CV</button>
-                        <button className={HS.contactBtn}>Contact</button>
+                        <button className={HS.downloadBtn}>{t('h4')}</button>
+                        <button className={HS.contactBtn}>{t('h5')}</button>
                     </div>
                 </div>
             </div>
