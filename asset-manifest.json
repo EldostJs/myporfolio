@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myporfolio/static/css/main.e3793bfa.css",
-    "main.js": "/myporfolio/static/js/main.adf29ede.js",
+    "main.css": "/myporfolio/static/css/main.a009c899.css",
+    "main.js": "/myporfolio/static/js/main.00226ec3.js",
     "static/js/453.f1a54c87.chunk.js": "/myporfolio/static/js/453.f1a54c87.chunk.js",
     "static/media/3BBS.gif": "/myporfolio/static/media/3BBS.b9583c91ce81b08ebd12.gif",
     "static/media/muvi.png": "/myporfolio/static/media/muvi.6c1ea790214f3eb2dbc9.png",
@@ -31,12 +31,12 @@
     "static/media/eduYellow.svg": "/myporfolio/static/media/eduYellow.6b8f8b23f0d528180ffe9cba6245e1a1.svg",
     "static/media/vite-seeklogo.svg": "/myporfolio/static/media/vite-seeklogo.efdf7a553632e32cc9f83e18dca351a5.svg",
     "index.html": "/myporfolio/index.html",
-    "main.e3793bfa.css.map": "/myporfolio/static/css/main.e3793bfa.css.map",
-    "main.adf29ede.js.map": "/myporfolio/static/js/main.adf29ede.js.map",
+    "main.a009c899.css.map": "/myporfolio/static/css/main.a009c899.css.map",
+    "main.00226ec3.js.map": "/myporfolio/static/js/main.00226ec3.js.map",
     "453.f1a54c87.chunk.js.map": "/myporfolio/static/js/453.f1a54c87.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3793bfa.css",
-    "static/js/main.adf29ede.js"
+    "static/css/main.a009c899.css",
+    "static/js/main.00226ec3.js"
   ]
 }
