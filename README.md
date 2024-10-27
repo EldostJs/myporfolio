@@ -4,13 +4,13 @@ This is a portfolio web application created using React. The project showcases m
 
 ## Tech Stack
 
-- **React** — library for building user interfaces
-- **EmailJS** — for sending emails without needing a backend
-- **i18next** — for localization in multiple languages
-- **Lucide React** — for using icons
-- **React Icons** — library for integrating various icons
-- **React Toastify** — for notifications
-- **Swiper** — for creating sliders and carousels
+- **React** ![React Icon](https://img.icons8.com/color/48/000000/react-native.png) — library for building user interfaces
+- **EmailJS** ![EmailJS Icon](https://img.icons8.com/color/48/000000/email.png) — for sending emails without needing a backend
+- **i18next** ![i18next Icon](https://img.icons8.com/color/48/000000/internationalization.png) — for localization in multiple languages
+- **Lucide React** ![Lucide Icon](https://img.icons8.com/color/48/000000/lucide.png) — for using icons
+- **React Icons** ![React Icons](https://img.icons8.com/color/48/000000/react.png) — library for integrating various icons
+- **React Toastify** ![React Toastify Icon](https://img.icons8.com/color/48/000000/notification.png) — for notifications
+- **Swiper** ![Swiper Icon](https://img.icons8.com/color/48/000000/swiper.png) — for creating sliders and carousels
 
 ## Features
 
@@ -22,4 +22,4 @@ This is a portfolio web application created using React. The project showcases m
 
 ## Live Link
 
-https://EldostJs.github.io/myporfolio
+[https://EldostJs.github.io/myporfolio](https://EldostJs.github.io/myporfolio)
