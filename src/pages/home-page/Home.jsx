@@ -34,9 +34,9 @@ export default function Home() {
         window.open('https://www.facebook.com/eldost.mirzoev?locale=ru_RU');
     };
 
-    // Функция для открытия PDF
+    // Функция для открытия PDF - используем прямой путь к GitHub Pages
     const handleDownloadCV = () => {
-        const pdfUrl = `${process.env.PUBLIC_URL}/files/EldostMirzeyevCv.pdf`;
+        const pdfUrl = 'https://EldostJs.github.io/myporfolio/files/EldostMirzeyevCv.pdf';
         window.open(pdfUrl, '_blank', 'noopener,noreferrer');
     };
 
