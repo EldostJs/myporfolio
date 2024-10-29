@@ -1,5 +1,6 @@
 // App.js
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import { LanguageProvider } from './translate/LanguageContext';
 import Home from "./pages/home-page/Home";
 import About from "./pages/about-page/About";
@@ -10,6 +11,12 @@ import Skills from "./pages/skills-page/Skills";
 import Contact from "./pages/contact-page/Contact";
 
 function App() {
+    useEffect(() => {
+        ReactGA.initialize('G-LRN7B11Z1Y');
+
+        ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
+    }, []);
+
     return (
         <LanguageProvider>
             <Home />

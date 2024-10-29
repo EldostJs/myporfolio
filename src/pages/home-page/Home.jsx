@@ -2,6 +2,7 @@ import React from 'react';
 import { Linkedin, Github, Instagram, Facebook } from 'lucide-react';
 import HS from './Home.module.css';
 import ProfImg from './images/345591843_1450759638663497_3456097937288446370_n.jpg';
+import ProfImg2 from './images/1000435554.jpg'
 import { useTranslation } from 'react-i18next';
 import { useLanguage } from '../../translate/LanguageContext';
 
@@ -9,7 +10,6 @@ export default function Home() {
     const { t } = useTranslation();
     const { changeLanguage } = useLanguage();
 
-    // Функция для прокрутки к разделу контактов
     const handleContactClick = () => {
         const contactSection = document.getElementById('contact');
         if (contactSection) {
@@ -17,7 +17,6 @@ export default function Home() {
         }
     };
 
-    // Функции для социальных сетей
     const handleWebsiteLinkedIn = () => {
         window.open('https://www.linkedin.com/in/eldostmirzeyev/');
     };
@@ -34,7 +33,6 @@ export default function Home() {
         window.open('https://www.facebook.com/eldost.mirzoev?locale=ru_RU');
     };
 
-    // Функция для открытия PDF
     const handleDownloadCV = () => {
         const pdfUrl = 'https://drive.google.com/file/d/15_ErX7E2U1bQoQFDlSOQxY77IJpnD-4h/view';
         window.open(pdfUrl, '_blank', 'noopener,noreferrer');
