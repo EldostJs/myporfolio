@@ -24,10 +24,10 @@ This is a portfolio web application created using React. The project showcases m
 ## Screenshots
 
 ### Website Screenshot
-![Website Screenshot](https://drive.google.com/drive/u/0/folders/16UKb0bh1lRhhKivE-CxR2_RDFyKWNf_- )
+![Website Screenshot](https://drive.google.com/file/d/1hLL9xTBKpKwLbZYTJmGTdMjiSwELgKdb/view?usp=drive_link)
 
 ### QR Code
-![QR Code](https://drive.google.com/drive/u/0/folders/16UKb0bh1lRhhKivE-CxR2_RDFyKWNf_)
+![QR Code](https://drive.google.com/file/d/1LLzJS5GYSXxp5YVmm6JVQkL58_Ihjxs5/view?usp=drive_link)
 
 ## Live Link
 
