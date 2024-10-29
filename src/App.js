@@ -1,6 +1,5 @@
-// App.js
 import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import { LanguageProvider } from './translate/LanguageContext';
 import Home from "./pages/home-page/Home";
 import About from "./pages/about-page/About";
@@ -12,9 +11,11 @@ import Contact from "./pages/contact-page/Contact";
 
 function App() {
     useEffect(() => {
+        // Инициализация Google Analytics
         ReactGA.initialize('G-0Q151VQPKQ');
 
-        ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
+        // Отправка события pageview
+        ReactGA.send("pageview");
     }, []);
 
     return (
