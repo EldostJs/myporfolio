@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a portfolio web application created using React. The project showcases my skills and projects and provides a way to contact me through a contact form.
 
-## Available Scripts
+## Tech Stack
 
-In the project directory, you can run:
+| Technology    | Description                                                            |
+|---------------|------------------------------------------------------------------------|
+| **React**     | <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React Icon" width="32" height="32"/> — library for building user interfaces |
+| **EmailJS**   | <img src="https://img.icons8.com/color/48/000000/email.png" alt="EmailJS Icon" width="32" height="32"/> — for sending emails without needing a backend |
+| **i18next**   | <img src="https://www.i18next.com/~gitbook/image?url=https%3A%2F%2F286188001-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fspaces%252F-L9iS6Wm2hynS5H9Gj7j%252Favatar.png%3Fgeneration%3D1523462254548780%26alt%3Dmedia&width=32&dpr=1&quality=100&sign=1467f54e&sv=1" alt="i18next Icon" width="32" height="32"/> — for localization in multiple languages |
+| **Lucide React** | <img src="https://lucide.dev/logo.dark.svg" alt="Lucide Icon" width="32" height="32"/> — for using icons |
+| **React Toastify** | <img src="https://user-images.githubusercontent.com/5574267/54994574-df4c1380-4fc4-11e9-8509-1d3aedbc7b96.png" alt="React Toastify Icon" width="32" height="32"/> — for notifications |
+| **Swiper**    | <img src="https://swiperjs.com/images/swiper-logo.svg" alt="Swiper Icon" width="32" height="32"/> — for creating sliders and carousels |
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Localization**: The portfolio supports multiple languages, providing an easy interface for changing the language.
+- **Contact Form**: Users can send messages to a specified email using EmailJS.
+- **Social Media Icons**: Icons are added using Lucide and React Icons.
+- **Notifications**: Toast notifications are displayed for user actions (e.g., successful form submission).
+- **Sliders**: Swiper is used for image or project slideshows and carousels.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
 
-### `npm test`
+### Website Screenshot
+![Website Screenshot](https://drive.google.com/drive/u/0/folders/16UKb0bh1lRhhKivE-CxR2_RDFyKWNf_- )
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### QR Code
+![QR Code](https://drive.google.com/drive/u/0/folders/16UKb0bh1lRhhKivE-CxR2_RDFyKWNf_)
 
-### `npm run build`
+## Live Link
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[https://EldostJs.github.io/myporfolio](https://EldostJs.github.io/myporfolio)
