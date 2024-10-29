@@ -2,6 +2,16 @@
 
 This is a portfolio web application created using React. The project showcases my skills and projects and provides a way to contact me through a contact form.
 
+### Website Screenshot
+<img src="https://drive.google.com/uc?export=view&id=1hLL9xTBKpKwLbZYTJmGTdMjiSwELgKdb" alt="Website Screenshot" width="200" height="200">
+
+### QR Code
+<img src="https://drive.google.com/uc?export=view&id=1LLzJS5GYSXxp5YVmm6JVQkL58_Ihjxs5" alt="QR Code" width="100" height="100">
+
+## Live Link
+
+[https://EldostJs.github.io/myporfolio](https://EldostJs.github.io/myporfolio)
+
 ## Tech Stack
 
 | Technology        | Description                                                                                     |
@@ -20,15 +30,3 @@ This is a portfolio web application created using React. The project showcases m
 - **Social Media Icons**: Icons are added using Lucide and React Icons.
 - **Notifications**: Toast notifications are displayed for user actions (e.g., successful form submission).
 - **Sliders**: Swiper is used for image or project slideshows and carousels.
-
-## Screenshots
-
-### Website Screenshot
-<img src="https://drive.google.com/uc?export=view&id=1hLL9xTBKpKwLbZYTJmGTdMjiSwELgKdb" alt="Website Screenshot" width="100" height="75">
-
-### QR Code
-<img src="https://drive.google.com/uc?export=view&id=1LLzJS5GYSXxp5YVmm6JVQkL58_Ihjxs5" alt="QR Code" width="100" height="75">
-
-## Live Link
-
-[https://EldostJs.github.io/myporfolio](https://EldostJs.github.io/myporfolio)
