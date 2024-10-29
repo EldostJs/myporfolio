@@ -5,9 +5,6 @@ This is a portfolio web application created using React. The project showcases m
 ### Website Screenshot
 <img src="https://drive.google.com/uc?export=view&id=1hLL9xTBKpKwLbZYTJmGTdMjiSwELgKdb" alt="Website Screenshot" width="400" height="300">
 
-### QR Code
-<img src="https://drive.google.com/file/d/1H8L0nIBFBDPuIabmGqD00_bEG-iNBcJK/view?usp=sharing" alt="QR Code" width="300" height="300">
-
 ## Live Link
 
 [https://EldostJs.github.io/myporfolio](https://EldostJs.github.io/myporfolio)
