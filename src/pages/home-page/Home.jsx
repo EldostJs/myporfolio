@@ -33,7 +33,7 @@ export default function Home() {
     };
 
     const handleDownloadCV = () => {
-        const pdfUrl = 'https://drive.google.com/file/d/15_ErX7E2U1bQoQFDlSOQxY77IJpnD-4h/view';
+        const pdfUrl = 'https://drive.google.com/file/d/15_ErX7E2U1bQoQFDlSOQxY77IJpnD-4h/view?usp=drive_link';
         window.open(pdfUrl, '_blank', 'noopener,noreferrer');
     };
 
