@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myporfolio/static/css/main.2b79ef87.css",
-    "main.js": "/myporfolio/static/js/main.e170bf3e.js",
+    "main.css": "/myporfolio/static/css/main.b89ccc5a.css",
+    "main.js": "/myporfolio/static/js/main.3cf89f75.js",
     "static/js/453.f1a54c87.chunk.js": "/myporfolio/static/js/453.f1a54c87.chunk.js",
     "static/media/sertefekat.jpg": "/myporfolio/static/media/sertefekat.f5495b9a359cdb3713b4.jpg",
     "static/media/3BBS.gif": "/myporfolio/static/media/3BBS.b9583c91ce81b08ebd12.gif",
@@ -9,7 +9,6 @@
     "static/media/expYellow.svg": "/myporfolio/static/media/expYellow.22be417c6d1c281c3b4b6ee0e80f0a5f.svg",
     "static/media/weather.png": "/myporfolio/static/media/weather.5e2c9f39c4d326a9eaf4.png",
     "static/media/345591843___n.jpg": "/myporfolio/static/media/345591843_1450759638663497_3456097937288446370_n.92d6d0d6afab95cee670.jpg",
-    "static/media/1000435554.jpg": "/myporfolio/static/media/1000435554.e66e5ad95c0acd450983.jpg",
     "static/media/paper.png": "/myporfolio/static/media/paper.2c2edd37e8337cb7da73.png",
     "static/media/elshad-agayevs-school-logo.png": "/myporfolio/static/media/elshad-agayevs-school-logo.a3dfffe4c938a42ad1ac.png",
     "static/media/social (1).png": "/myporfolio/static/media/social (1).985a7327fc7347ebdba0.png",
@@ -23,6 +22,7 @@
     "static/media/social (2).png": "/myporfolio/static/media/social (2).58d16c2a5ec58d719d09.png",
     "static/media/axios_logo_icon_168545.png": "/myporfolio/static/media/axios_logo_icon_168545.f84cf736cff5257b0b96.png",
     "static/media/programing.png": "/myporfolio/static/media/programing.95f91a4c1eba531267a2.png",
+    "static/media/yellowTheme-boy (1).svg": "/myporfolio/static/media/yellowTheme-boy (1).9ddb06c0e51b2003539aa3fc76caeaed.svg",
     "static/media/ui-ux.png": "/myporfolio/static/media/ui-ux.c9680c624b7c3297d540.png",
     "static/media/figma.png": "/myporfolio/static/media/figma.72fbc535ebe253a5dbc4.png",
     "static/media/html.png": "/myporfolio/static/media/html.6e930594286d8afe4c79.png",
@@ -33,12 +33,12 @@
     "static/media/eduYellow.svg": "/myporfolio/static/media/eduYellow.6b8f8b23f0d528180ffe9cba6245e1a1.svg",
     "static/media/vite-seeklogo.svg": "/myporfolio/static/media/vite-seeklogo.efdf7a553632e32cc9f83e18dca351a5.svg",
     "index.html": "/myporfolio/index.html",
-    "main.2b79ef87.css.map": "/myporfolio/static/css/main.2b79ef87.css.map",
-    "main.e170bf3e.js.map": "/myporfolio/static/js/main.e170bf3e.js.map",
+    "main.b89ccc5a.css.map": "/myporfolio/static/css/main.b89ccc5a.css.map",
+    "main.3cf89f75.js.map": "/myporfolio/static/js/main.3cf89f75.js.map",
     "453.f1a54c87.chunk.js.map": "/myporfolio/static/js/453.f1a54c87.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b79ef87.css",
-    "static/js/main.e170bf3e.js"
+    "static/css/main.b89ccc5a.css",
+    "static/js/main.3cf89f75.js"
   ]
 }
