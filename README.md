@@ -6,7 +6,7 @@ This is a portfolio web application created using React. The project showcases m
 <img src="https://drive.google.com/uc?export=view&id=1hLL9xTBKpKwLbZYTJmGTdMjiSwELgKdb" alt="Website Screenshot" width="400" height="300">
 
 ### QR Code
-<img src="https://drive.google.com/uc?export=view&id=1LLzJS5GYSXxp5YVmm6JVQkL58_Ihjxs5" alt="QR Code" width="300" height="300">
+<img src="https://drive.google.com/file/d/1H8L0nIBFBDPuIabmGqD00_bEG-iNBcJK/view?usp=drive_link" alt="QR Code" width="300" height="300">
 
 ## Live Link
 
