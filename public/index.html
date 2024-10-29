@@ -11,31 +11,8 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <title>Eldost Js</title>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Q151VQPKQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-0Q151VQPKQ', {
-      debug_mode: true,
-      send_page_view: true,
-      cookie_domain: 'github.io',
-      cookie_expires: 7776000, // 90 дней в секундах
-      anonymize_ip: true,
-      transport_type: 'beacon'
-    });
-
-    // Отправляем событие при каждом посещении
-    window.addEventListener('load', function () {
-      gtag('event', 'user_visit', {
-        'event_category': 'engagement',
-        'event_label': window.location.pathname,
-        'value': new Date().getTime()
-      });
-    });
-  </script>
+  <script defer data-domain="eldostjs.github.io/myporfolio"
+    src="https://plausible.io/js/script.outbound-links.js"></script>
 </head>
 
 <body>
