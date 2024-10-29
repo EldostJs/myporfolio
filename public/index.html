@@ -21,14 +21,18 @@
     gtag('config', 'G-0Q151VQPKQ', {
       debug_mode: true,
       send_page_view: true,
-      cookie_domain: 'github.io'
+      cookie_domain: 'github.io',
+      cookie_expires: 7776000, // 90 дней в секундах
+      anonymize_ip: true,
+      transport_type: 'beacon'
     });
 
-    // Отправляем тестовое событие при загрузке
+    // Отправляем событие при каждом посещении
     window.addEventListener('load', function () {
-      gtag('event', 'page_load', {
+      gtag('event', 'user_visit', {
         'event_category': 'engagement',
-        'event_label': window.location.pathname
+        'event_label': window.location.pathname,
+        'value': new Date().getTime()
       });
     });
   </script>
