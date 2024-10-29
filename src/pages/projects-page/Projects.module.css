@@ -213,6 +213,9 @@
     .projectCard {
         height: 280px;
     }
+    .viewAllButton{
+        margin-right: 1rem;
+    }
 
 }
 

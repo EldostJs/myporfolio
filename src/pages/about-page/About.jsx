@@ -2,6 +2,7 @@
 import React from 'react';
 import AS from './About.module.css';
 import GIF from './images/3BBS.gif';
+import Im from './images/yellowTheme-boy (1).svg'
 import { useTranslation } from 'react-i18next';
 
 const About = () => {
@@ -24,7 +25,7 @@ const About = () => {
         </div>
       </div>
       <div className={AS.illustration}>
-        <img src={GIF} alt="" />
+        <img src={Im} alt="" />
       </div>
     </section>
   );

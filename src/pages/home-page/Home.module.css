@@ -71,6 +71,7 @@ html {
 }
 
 .socialIcons {
+    color: black;
     cursor: pointer;
     display: flex;
     gap: 1.5rem;
@@ -100,7 +101,8 @@ html {
     .profileImageContainer {
         top: 20%;
     }
-    .languageButtons{
+
+    .languageButtons {
         flex-direction: column;
         margin-right: -2rem;
         padding-top: 1rem;

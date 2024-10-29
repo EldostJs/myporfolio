@@ -87,7 +87,7 @@
 .illustration img {
     margin-top: 5rem;
     margin-left: -20rem;
-    width: 200%;
+    width: 150%;
     opacity: 0;
     animation: fadeIn 1s ease forwards;
     animation-delay: 1.4s;
@@ -169,6 +169,7 @@
 }
 
 @media (max-width: 768px) {
+    
     .about {
         flex-direction: column;
         align-items: center;
@@ -249,4 +250,8 @@
         font-size: 0.9rem;
         padding: 0 5px;
     }
+    .illustration img {
+        width: 55%;
+    }
+    
 }

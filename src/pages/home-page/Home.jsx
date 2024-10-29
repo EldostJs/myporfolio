@@ -2,7 +2,6 @@ import React from 'react';
 import { Linkedin, Github, Instagram, Facebook } from 'lucide-react';
 import HS from './Home.module.css';
 import ProfImg from './images/345591843_1450759638663497_3456097937288446370_n.jpg';
-import ProfImg2 from './images/1000435554.jpg'
 import { useTranslation } from 'react-i18next';
 import { useLanguage } from '../../translate/LanguageContext';
 
