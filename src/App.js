@@ -12,7 +12,7 @@ import Contact from "./pages/contact-page/Contact";
 
 function App() {
     useEffect(() => {
-        ReactGA.initialize('G-LRN7B11Z1Y');
+        ReactGA.initialize('G-EMZTYW26PQ');
 
         ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
     }, []);
