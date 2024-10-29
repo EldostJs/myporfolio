@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import ReactGA from 'react-ga4';
+import ReactGA4 from 'react-ga4';
 import { LanguageProvider } from './translate/LanguageContext';
 import Home from "./pages/home-page/Home";
 import About from "./pages/about-page/About";
@@ -11,11 +11,25 @@ import Contact from "./pages/contact-page/Contact";
 
 function App() {
     useEffect(() => {
-        // Инициализация Google Analytics
-        ReactGA.initialize('G-0Q151VQPKQ');
+        // Initialize GA4
+        ReactGA4.initialize('G-0Q151VQPKQ');
+        
+        // Send pageview with a callback
+        ReactGA4.send({
+            hitType: "pageview",
+            page: window.location.pathname + window.location.search
+        });
 
-        // Отправка события pageview
-        ReactGA.send("pageview");
+        // Optional: Track page changes if you're using React Router
+        const handleLocationChange = () => {
+            ReactGA4.send({
+                hitType: "pageview",
+                page: window.location.pathname + window.location.search
+            });
+        };
+
+        window.addEventListener('popstate', handleLocationChange);
+        return () => window.removeEventListener('popstate', handleLocationChange);
     }, []);
 
     return (
