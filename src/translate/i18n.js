@@ -5,6 +5,7 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
     en: {
         translation: {
+            q1: 'Skills',
             h1: 'Front-End Developer',
             h2: 'Eldost Mirzeyev',
             h3: 'Front-end developer with experience in creating interactive and responsive web applications. Proficient in HTML5, CSS3, JavaScript (ES6+), and React. Skilled in Git, responsive design, and API integration. Focused on delivering high-quality UX/UI solutions and staying up to date with the latest web development trends.',
@@ -44,6 +45,7 @@ const resources = {
     },
     ru: {
         translation: {
+            q1: 'Навыки',
             h1: 'Front-End Developer',
             h2: 'Eldost Mirzeyev',
             h3: 'Front-End Developer с опытом создания интерактивных и отзывчивых веб-приложений. Обладает навыками в HTML5, CSS3, JavaScript (ES6+) и React. Умеет работать с Git, отзывчивым дизайном и интеграцией API. Ориентирован на предоставление высококачественных UX/UI решений и поддержание актуальности в современных трендах веб-разработки.',
@@ -83,6 +85,7 @@ const resources = {
     },
     az: {
         translation: {
+            q1: 'Bacarıqlar',
             h1: 'Front-End Developer',
             h2: 'Eldost Mirzeyev',
             h3: 'İnteraktiv ve cavabdeh veb tetbiqlerinin yaradılması tecrübesine malik  Front-End Developer. HTML5, CSS3, JavaScript (ES6+) ve React-de peşekar. Git, cavabdeh dizayn ve API inteqrasiyasında bacarıqlıdır. Yüksek keyfiyyetli UX/UI helleri teqdim etmeye fokuslanıb ve müasir veb inkişaf tendensiyalarını izlemeye çalışır.',

@@ -175,7 +175,6 @@
     height: auto;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
     .contentWrapper {
         flex-direction: column;
@@ -193,7 +192,6 @@
         order: 2;
     }
 
-    /* Hide image on screens below 1200px */
     .imageWrapper {
         display: none;
     }
@@ -258,7 +256,6 @@
     }
 }
 
-/* Dark mode support */
 @media (prefers-color-scheme: dark) {
 
     .input,

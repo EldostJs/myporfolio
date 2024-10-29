@@ -167,7 +167,6 @@
     background-color: rgb(160, 110, 0);
 }
 
-/* Медиа-запросы для адаптивности */
 @media (max-width: 1200px) {
     .projectsGrid {
         grid-template-columns: repeat(3, 1fr);
@@ -219,7 +218,6 @@
 
 }
 
-/* Поддержка reduced motion */
 @media (prefers-reduced-motion: reduce) {
     .cardContent {
         transition: none;

@@ -8,7 +8,7 @@ import im from './images/contactsYellow.svg';
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
-    const { t } = useTranslation(); // Перенесите сюда
+    const { t } = useTranslation();
 
     const [formData, setFormData] = useState({
         name: '',
@@ -31,10 +31,10 @@ const Contact = () => {
         setIsSending(true); 
 
         emailjs.send(
-            'service_gr8ksem', // Service ID
-            'template_wh5j59i', // Template ID
+            'service_gr8ksem', 
+            'template_wh5j59i', 
             formData,
-            'POEPMEYT4RKS8Wnfq' // Public Key
+            'POEPMEYT4RKS8Wnfq'
         )
             .then((result) => {
                 console.log('Email успешно отправлен!', result.text);

@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import ss from './Skills.module.css';
+import { useTranslation } from 'react-i18next';
+
 
 import bootstrapIcon from './images/bootstrap.png';
 import figmaIcon from './images/figma.png';
@@ -45,6 +47,8 @@ const skills = [
 ];
 
 const Skills = () => {
+    const { t } = useTranslation();
+
     const swiperRef = useRef(null);
 
     const handleMouseEnter = () => {
@@ -61,9 +65,9 @@ const Skills = () => {
 
     return (
         <div className={ss.skillsContainer}>
-            <h2 className={ss.skillsTitle}>Skills</h2>
+            <h2 className={ss.skillsTitle}>{t('q1')}</h2>
             <Swiper
-                onSwiper={(swiper) => (swiperRef.current = swiper)} // Устанавливаем swiperRef на экземпляр Swiper
+                onSwiper={(swiper) => (swiperRef.current = swiper)}
                 modules={[Autoplay]}
                 spaceBetween={30}
                 loop={true}
@@ -102,9 +106,9 @@ const Skills = () => {
             >
                 {skills.map((skill, index) => (
                     <SwiperSlide key={index} className={ss.swiperSlide}>
-                        <div className={ss.skillItem} 
-                             onMouseEnter={handleMouseEnter} 
-                             onMouseLeave={handleMouseLeave}>
+                        <div className={ss.skillItem}
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}>
                             <a href={skill.url} target="_blank" rel="noopener noreferrer">
                                 <img src={skill.icon} alt={skill.name} className={ss.skillIcon} />
                             </a>
