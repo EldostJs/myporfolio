@@ -7,7 +7,7 @@ const resources = {
         translation: {
             q1: 'Skills',
             h1: 'Front-End Developer',
-            h2: 'Eldost Mirzeyev',
+            h2: 'Eldost Mirzayev',
             h3: 'Front-end developer with experience in creating interactive and responsive web applications. Proficient in HTML5, CSS3, JavaScript (ES6+), and React. Skilled in Git, responsive design, and API integration. Focused on delivering high-quality UX/UI solutions and staying up to date with the latest web development trends.',
             h4: 'Download CV',
             h5: 'Contact',
@@ -47,7 +47,7 @@ const resources = {
         translation: {
             q1: 'Навыки',
             h1: 'Front-End Developer',
-            h2: 'Eldost Mirzeyev',
+            h2: 'Эльдост Мирзоев',
             h3: 'Front-End Developer с опытом создания интерактивных и отзывчивых веб-приложений. Обладает навыками в HTML5, CSS3, JavaScript (ES6+) и React. Умеет работать с Git, отзывчивым дизайном и интеграцией API. Ориентирован на предоставление высококачественных UX/UI решений и поддержание актуальности в современных трендах веб-разработки.',
             h4: 'Скачать резюме',
             h5: 'Контакты',
